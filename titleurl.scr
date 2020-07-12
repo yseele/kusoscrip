@@ -1,0 +1,10 @@
+var input=document.createElement("input");
+input.type="button";
+input.value="Title and URL";
+input.onclick = showAlert;
+document.body.appendChild(input); 
+ 
+function showAlert()
+{
+    window.prompt("Title and URL", document.title + " " + document.URL);
+}
